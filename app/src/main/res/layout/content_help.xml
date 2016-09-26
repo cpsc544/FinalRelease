@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+//****************************************************************************
+// File Name: content_help.xml
+// Team Name:group 01
+// Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+// Thomas Schroeder, and Christina Wade
+// Class:CPSC 544-50
+// Semester: Fall 2016
+// Summary of Code in file: This is an XML file that was automatically created by android studio
+// the information in this xml file are for the Help activity here you will find things such as
+// the colors we used, the strings that we used, and the spacing between widgets.
+// ***************************************************************************
+
+
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,45 +28,67 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="cpsc544.stacksort.Help"
     tools:showIn="@layout/activity_help">
-
+    <!--
+/************************************************************************************************
+// The code below is for the StackSort text field.  Here you will find the information required
+// for the text, to include what the text field says, the color of the font and the size.
+// **********************************************************************************************-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="StackSort"
+        android:text="@string/app_name"
         android:id="@+id/textView"
-        android:textSize="65sp"
+        android:textSize="@dimen/helpTopTextSize"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary" />
+        <!--
+/************************************************************************************************
+// The code below is for the Help text field.  Here you will find the information required
+// for the text, to include what the text field says, the color of the font and the size.
+// *******************************************************************************************-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Help"
+        android:text="@string/Help"
         android:id="@+id/textView2"
-        android:textSize="45sp"
+        android:textSize="@dimen/helpMiddleTextSize"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary" />
+        <!--
+/************************************************************************************************
+// The code below is for the paragraph found in the middle of the screen.  Here you will find  the
+// required information for the text, to include what the text field says, the color and the size.
+// of the font
+// *******************************************************************************************-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="For each variable in your array, please enter a whole number integer with the value of 0 to 9 in the text field. As you input each appropriate number, the value will be displayed on the screen. Your array must contain at least 2, but no more than 8 variables. When you are satisfied with your array, press the Sort button to view your results."
+        android:text="@string/helpDesc"
         android:id="@+id/textView3"
-        android:textSize="23sp"
+        android:textSize="@dimen/helpExplanationSize"
         android:layout_below="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary" />
+        <!--
+/************************************************************************************************
+// The code below is for the back button.  Here you will find the information required
+// for the button, to include what the text in the button says, the color and size of the font.
+// *******************************************************************************************-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="@string/back"
         android:id="@+id/back_button"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
+        android:layout_alignEnd="@+id/textView2"
+        android:background="@color/buttonColor"
+        android:textColor="@color/colorPrimary" />
 
 </RelativeLayout>

@@ -2,6 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cpsc544.stacksort">
 
+    //****************************************************************************
+    // File Name: AndroidManifest.xml
+    // Team Name:group 02
+    // Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+    // Thomas Schroeder, and Christina Wade
+    // Class:CPSC 544-50
+    // Semester: Fall 2016
+    // Summary of Code in file: This file is generated automatically as the user adds items
+    // to the User interface side.  The main things that can be found in this file are, the
+    // assignment of the launch logo, as well as the blue bar you will find on top of all
+    // of the user interfaces.
+    // ***************************************************************************
+
+
+    // ***************************************************************************
+    // the following lines of code does several things.  It sets a blue bar on top of the
+    // application through android:theme as well as assigns the launch logo to a picture
+    // of an orange elephant with a blue background through the android:icon command.
+    // The logo was voted on by the team In honor of our Titan Pride.
+    //****************************************************************************
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,20 +30,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainPage">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
+        // ***************************************************************************
+        // the information below is for the help activity.  It sets the activity to have
+        // the same blue bar on top as the main page.
+        //****************************************************************************
         <activity
             android:name=".Help"
             android:label="@string/title_activity_help"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
+
+
+        // ***************************************************************************
+        // the information below is for the AboutUSActivity activity.  It sets the activity to have
+        // the same blue bar on top as the main page.
+        //****************************************************************************
         <activity
             android:name=".AboutUSActivity"
             android:label="@string/title_activity_about_us"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme"></activity>
+
     </application>
+
+
 
 </manifest>

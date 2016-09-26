@@ -1,6 +1,40 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
+    <!--
+
+    //****************************************************************************
+    // File Name: dimens.xml
+    // Team Name:group 01
+    // Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+    // Thomas Schroeder, and Christina Wade
+    // Class:CPSC 544-50
+    // Semester: Fall 2016
+    // Summary of Code in file: the information here is for the dimensions of the application,
+    // this includes margins and text sizes
+    // ***************************************************************************
+
+
+    -->
+    <!--*****************        theme                ***************************-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>   <!--   theme margin                     -->
+    <dimen name="activity_vertical_margin">16dp</dimen>     <!--   theme margin                     -->
+    <dimen name="fab_margin">16dp</dimen>                   <!--   theme margin                     -->
+
+    <!--*****************       about                ***************************-->
+    <dimen name="topTextSize">30dp</dimen>                  <!-- top text on about page             -->
+    <dimen name="middleTextMarginAbout">42dp</dimen>        <!-- margin for middle text on about    -->
+    <dimen name="middleTextSizeAbout">24sp</dimen>          <!-- size for middle text on about      -->
+    <dimen name="nameSize">20sp</dimen>                     <!-- size for text holding member names -->
+
+    <!--*****************        help                ***************************-->
+    <dimen name="helpTopTextSize">65sp</dimen>              <!-- size for top text of help activity -->
+    <dimen name="helpMiddleTextSize">45sp</dimen>           <!-- size for middle text help act      -->
+    <dimen name="helpExplanationSize">18sp</dimen>          <!-- help paragraph size                -->
+
+    <!--*****************        main                 ***************************-->
+    <dimen name="mainTopTextMargin">41dp</dimen>            <!-- margin for top text Main           -->
+    <dimen name="mainTopTextSize">30sp</dimen>              <!-- Size for top text main             -->
+    <dimen name="mainSize20">20sp</dimen>                   <!-- text below title on main           -->
+    <dimen name="userInputTextSize">24sp</dimen>            <!-- main user input                    -->
+    <dimen name="userInputTopMargin">35dp</dimen>           <!-- main user input margin             -->
+
 </resources>

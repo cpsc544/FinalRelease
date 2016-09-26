@@ -1,20 +1,28 @@
+<!--
+
+//****************************************************************************
+// File Name: styles.xml
+// Team Name:group 01
+// Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+// Thomas Schroeder, and Christina Wade
+// Class:CPSC 544-50
+// Semester: Fall 2016
+// Summary of Code in file: here you will find information regarding the theme of the application
+// that we elected to go with
+// ***************************************************************************
+
+
+-->
+
 <resources>
-
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
     </style>
-
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

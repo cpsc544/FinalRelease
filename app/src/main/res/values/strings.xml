@@ -1,6 +1,61 @@
+<!--
+
+//****************************************************************************
+// File Name: strings.xml
+// Team Name:group 01
+// Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+// Thomas Schroeder, and Christina Wade
+// Class:CPSC 544-50
+// Semester: Fall 2016
+// Summary of Code in file: here you will find many string definitions for the application
+// in order for us to avoid hard coding values we decided to make an xml file and have the
+// application look for the values in here in order to facilitate making any possible changes
+// in the future.
+// ***************************************************************************
+
+
+-->
+
 <resources>
-    <string name="app_name">StackSort</string>
-    <string name="title_activity_help_page">HelpPage</string>
-    <string name="title_activity_help">Help</string>
-    <string name="title_activity_about_us">AboutUSActivity</string>
+
+
+    <!-- ******************************************help *************************************** -->
+    <string name="title_activity_help">Help</string>                <!-- title of Help activity -->
+    <string name="Back">Back</string>                               <!-- text for back button   -->
+    <string name="Help">Help</string>                               <!-- middle text on help page-->
+    <string name="insertion_sort_app">Insertion Sort App</string>   <!-- String in Main         -->
+    <string name="explanation">Enter 2 - 8 Integers 0-9</string>    <!-- displays main descript -->
+    <!-- below is the description of how to use the application-->
+        <string name="helpDesc">For each variable in your array, please enter a whole number integer
+        with the value of 0 to 9 in the text field. As you input each appropriate number, the value
+        will be displayed on the screen. If you enter less than 2 numbers the sort button will be
+        disabled, and once you enter 8 numbers you will no longer be allowed to enter any more. When
+        you are satisfied with your array, press the Sort button to view your results. If you ever
+        want to clear your input and the display simply press the clear button and it will clear it
+        for you.</string>
+
+    <!-- *************************about *****************************************************-->
+    <string name="title_activity_about_us">AboutUSActivity</string> <!-- title for about us act -->
+    <string name="titleBarAbout">StackSort - About Us</string>      <!-- title bar for about -->
+    <!-- below is the introduction to the about us page -->
+    <string name="aboutUsTopText">The StackSort application was created by Team 01 for CPSC 544 at
+        California State University, Fullerton</string>
+    <!-- introduction to team members -->
+    <string name="membersTitle">Members of Team 01 include:</string>
+    <!-- name of team members -->
+    <string name="teamMemberNames">\n\nStephanie Allen \nJose Barron \nEmily Gutierrez-Alvarez
+        \nJarrod Merryman \nThomas Schroeder \nChristina Wade</string>
+    <string name="back">Back</string>                               <!-- value inside back button-->
+
+   <!-- ****************************************main ***************************************** -->
+    <string name="titleBarHelpPage">StackSort - Help Page</string>  <!-- top text on main        -->
+    <string name="titleMain">StackSort Application</string>         <!-- top text string on main -->
+    <string name="app_name">StackSort</string>                      <!-- displays StackSort      -->
+    <string name="sort_button_title">Sort</string>                  <!-- sort button text -      -->
+    <string name="firstOutput">"to sort array: "</string>           <!-- initial output after sort-->
+    <string name="exit_button_title">Exit</string>                  <!-- text in exit button     -->
+    <string name="clear_button_title">CLEAR</string>                <!-- text in clear button    -->
+    <string name="inputRequest">Enter Integers:</string>            <!-- input request           -->
+    <!-- business main -->
+    <string name="blankLine">\n</string>                            <!-- new line request        -->
 </resources>

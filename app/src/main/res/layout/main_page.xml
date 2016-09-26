@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+//****************************************************************************
+// File Name: activity_about_us.xml
+// Team Name:group 01
+// Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+// Thomas Schroeder, and Christina Wade
+// Class:CPSC 544-50
+// Semester: Fall 2016
+// Summary of Code in file: This is an XML file that was automatically created by android studio
+// the information in this xml file are for the aboutUSActivity here you will find things such as
+// the colors we used, the strings that we used, and the spacing between widgets.
+// ***************************************************************************
+
+
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,101 +26,203 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cpsc544.stacksort.MainPage"
     android:clickable="false">
+    <!--
+    /************************************************************************************************
+    // The code below is for the top TextView box that says Stack Sort.  Here you will find the required
+    // information for the text, to include what the text field says, the color of the font and the size.
+    // ******************************************************************************************* -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"
+            android:id="@+id/appName"
+            android:layout_marginTop="@dimen/mainTopTextMargin"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/mainTopTextSize"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the top TextView box that says Insertion Sort App.  Here you will find the
+    // information required for the text, to include what the text field says, the color of the font
+    // and the size.
+    // *******************************************************************************************-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/insertion_sort_app"
+            android:id="@+id/appDescription"
+            android:layout_below="@+id/appName"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/mainSize20"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the TextView box that says Enter 2 - 8 Integers 0-9.  Here you will find
+    // the information required for the text, to include what the text field says, the color of the font
+    // and the size.
+    // *******************************************************************************************-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/explanation"
+            android:id="@+id/paramInfo"
+            android:layout_below="@+id/appDescription"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/mainSize20"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the TextView box that says Enter Integers:.  Here you will find
+    // the information required for the text, to include what the text field says, the color of the font
+    // and the size.
+    // *******************************************************************************************-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/inputRequest"
+            android:id="@+id/textView4"
+            android:textSize="@dimen/userInputTextSize"
+            android:layout_marginTop="@dimen/userInputTopMargin"
+            android:layout_below="@+id/paramInfo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the sort button.  Here you will find the information required for the button,
+    // to include what the text field inside the button says, the color and size of the font, and the
+    // color of the button..
+    // *******************************************************************************************-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_button_title"
+            android:id="@+id/sortBtn"
+            android:background="@color/buttonColor"
+            android:layout_alignTop="@+id/helpBtn"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the help button.  Here you will find the information required for the
+    // button to include the image information, and what color the button should be
+    // *******************************************************************************************-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/helpBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_menu_help"
+            android:background="@color/buttonColor" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the EditText box that is being used as the user input.  Here you will find
+    // the information required for the EdiText, to include what the text field says, the color of the
+    // font and the size.
+    // *******************************************************************************************-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="@integer/emsValue"
+            android:id="@+id/userInput"
+            android:background="@color/buttonColor"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:clickable="false"
+            android:enabled="true"
+            android:maxLength="@integer/maximumInput"
+            android:editable="false"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignRight="@+id/paramInfo"
+            android:layout_alignEnd="@+id/paramInfo"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the about button.  Here you will find the information required for the
+    // button to include the image information, and what color the button should be
+    // *******************************************************************************************-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutButton"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:layout_alignTop="@+id/helpBtn"
+            android:background="@color/buttonColor" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the TextView box that is being used as the application output.  Here you
+    // will find the information required for the TextView, to include what the text field says, the
+    // color of the font and the size.
+    // *******************************************************************************************-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userOutput"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/userInput"
+            android:layout_alignEnd="@+id/userInput"
+            android:layout_above="@+id/sortBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the exit button.  Here you will find the information required for the
+    // button to include the color of the button, what the button says,  and the color and size
+    // of the font inside the button.
+     // *******************************************************************************************-->
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_button_title"
+            android:id="@+id/exitButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/buttonColor"
+            android:textColor="@color/colorPrimary" />
+    <!--
+    /************************************************************************************************
+    // The code below is for the clear button.  Here you will find the information required for the
+    // button to include the color of the button, what the button says,  and the color and size
+    // of the font inside the button.
+    // *******************************************************************************************-->
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_button_title"
+            android:id="@+id/clearBtn"
+            android:background="@color/buttonColor"
+            android:layout_below="@+id/userInput"
+            android:layout_alignRight="@+id/helpBtn"
+            android:layout_alignEnd="@+id/helpBtn"
+            android:textColor="@color/colorPrimary" />
+    <!--
+/************************************************************************************************
+// The code below is for our logo to display.  Here you will find the information regarding the
+logo, to include dimensions and margins for it.
+// *******************************************************************************************-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/exitButton"
+            android:layout_toLeftOf="@+id/paramInfo"
+            android:layout_toStartOf="@+id/paramInfo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Stack Sort"
-        android:id="@+id/appName"
-        android:layout_marginTop="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Insertion Sort App"
-        android:id="@+id/appDescription"
-        android:layout_below="@+id/appName"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Enter 2 - 8 Integers 0-9"
-        android:id="@+id/paramInfo"
-        android:layout_below="@+id/appDescription"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Enter Intgers:"
-        android:id="@+id/textView4"
-        android:textSize="24sp"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/paramInfo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sort"
-        android:id="@+id/sortBtn"
-        android:background="#fcb3b3"
-        android:layout_alignTop="@+id/helpBtn"
-        android:layout_centerHorizontal="true"
-        android:clickable="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/helpBtn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:src="@android:drawable/ic_menu_help"
-        android:background="#fcb3b3" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/userInput"
-        android:background="#fcb3b3"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4"
-        android:clickable="false"
-        android:enabled="true"
-        android:editable="false" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/aboutButton"
-        android:src="@android:drawable/ic_menu_info_details"
-        android:layout_alignTop="@+id/helpBtn"
-        android:background="#fcb3b3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/userOutput"
-        android:layout_below="@+id/textView4"
-        android:layout_alignRight="@+id/userInput"
-        android:layout_alignEnd="@+id/userInput"
-        android:layout_above="@+id/sortBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-</RelativeLayout>
+    </RelativeLayout>

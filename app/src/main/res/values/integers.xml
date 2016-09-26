@@ -2,18 +2,20 @@
 <!--
 
 //****************************************************************************
-// File Name: colors.xml
+// File Name: integers.xml
 // Team Name:group 01
 // Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
 // Thomas Schroeder, and Christina Wade
 // Class:CPSC 544-50
 // Semester: Fall 2016
-// Summary of Code in file: the information here is for the colors that we used in the application
+// Summary of Code in file: the information here is for integers found in the xml files, in order
+// to not hardcode values we decided to add an xml files with definitions.
 // ***************************************************************************
 
 
 -->
 <resources>
-    <color name="colorPrimary">#00274C</color>      <!-- this is the blue color we used in the app -->
-    <color name="buttonColor">#E17000</color>       <!--  this is the orange-->
+        <integer name="emsValue">10</integer>               <!-- this is ems value -->
+        <integer name="maximumInput"> 8 </integer>          <!-- this is the maximum input value -->
 </resources>
+

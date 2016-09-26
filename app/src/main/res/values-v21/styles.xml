@@ -1,3 +1,19 @@
+<!--
+
+//****************************************************************************
+// File Name: styles.xml(v21)
+// Team Name:group 01
+// Team Members: Stephanie Allen, Jose Barron, Emily Gutierrez-Alvarez, Jarrod Merryman
+// Thomas Schroeder, and Christina Wade
+// Class:CPSC 544-50
+// Semester: Fall 2016
+// Summary of Code in file: here you will find information regarding the theme of the application
+// that we elected to go with
+// ***************************************************************************
+
+
+-->
+
 <resources>
 
     <style name="AppTheme.NoActionBar">
